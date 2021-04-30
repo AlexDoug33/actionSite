@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Pagina de Lances</title>
+	<script type="text/javascript">
+		function relogio(){
+           var data = new Date();
+           var horas = data.getHours();
+           var minutos = data.getMinutes();
+           var segundos = data.getSeconds();
+           
+               
+           
+           if (horas  < 10){
+           horas = "0"+horas;	
+           }
+           
+           if (minutos  < 10){
+           minutos = "0"+minutos;	
+           }
+		
+           if (segundos  < 10){
+           segundos = "0"+segundos;	
+           }
+	       
+	       document.getElementById("relogio").innerHTML=horas+":"+minutos+":"+segundos;
+        }
+    
+    window.setInterval("relogio()",1000);
+	</script>
+	<style type="text/css">
+    #relogio{
+        color: blue;
+        font: bold 48px Arial;
+        padding: 50px;
+
+    }  
+	</style>
+	
+</head>
+<body onload="relogio();">
+   <div id="relogio"></div>
+	<div class="container">
+		
+		
+		<form>
+			<div class="form-group">
+				<img src="img/pc-gamer.jpg" style="width: 160px; right: 160px;"></br>
+				<label>Pc Gamer - Computadores no Sold Leilões</label>
+				<select class="form-control">
+					<option >Arremate Finaliza em 1d 2h</option>
+
+				</select></br>
+				<label>Campo Grande-MS</label>
+				<input type="text" name="lanceatual" value="R$ 3,000,00" class="form-control" disabled>
+				<label>10X R$ 300,00 Cartão e Boleto</label></br>
+				<label>Entrega a combinar com o vendedor</label></br>
+				<label>Consultar frete</label></br>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Consultar frete</a>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Ofertar</a>
+				
+			</div>
+			<div class="form-group">
+							
+				<img src="img/macbook.jpg" style="width: 160px; right: 160px;"></br>
+				<label>Apple Macbook Pro Md101 13 Core I5 2.5ghz 4gb 500gb</label>
+				 
+				<select class="form-control" >
+                    <option >Arremate Finaliza em 3d 1h</option>
+
+				</select></br>
+				<label>São Paulo-SP</label>
+				<input type="text" name="lanceatual" value="R$ 4,000,00" class="form-control" disabled>
+				<label>10X R$ 400,00 Cartão e Boleto</label></br>
+				<label>Entrega a combinar com o vendedor</label></br>
+				<label>Consultar frete</label></br>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Consultar frete</a>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Ofertar</a>
+				
+			</div>
+		    <div class="form-group">
+							
+				<img src="img/smartwatch-relogio.jpg" style="width: 160px; right: 160px;"></br>
+				<label>Smartwatch Relógio Bluetooth Chip Q18 P/ Moto Lg Samsung Ios</label>
+				 
+				<select class="form-control" >
+                    <option >Arremate Finaliza em 9d 2h</option>
+
+				</select></br>
+				<label>Belo Horizonte</label>
+				<input type="text" name="lanceatual" value="R$ 129,00" class="form-control" disabled>
+				<label>10X R$ 12,90 Cartão e Boleto</label></br>
+				<label>Entrega a combinar com o vendedor</label></br>
+				<label>Consultar frete</label></br>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Consultar frete</a>
+				<a href="index.html" class="btn btn-primary " role="button" aria-pressed="true">Ofertar</a>
+		</form>
+	</div>
+	
+</body>
+</html>

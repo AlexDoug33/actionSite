@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <html>
+ <head>
+      <meta charset="utf-8"/>
+      <title>cadastro usuario</title>  
+      <link rel="stylesheet" href="_css/estilo.css""/>
+      <link rel="stylesheet" href="_css/form.css">
+      
+</head>
+<body>
+        <div>     
+  
+          <header>
+          <form>
+          <h1>Cadastro Usuário</h1> 
+          
+
+          <fieldset id="usuario"><legend>Identificação do Usuário:</legend> 
+          <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"></p> 
+          <p>Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"></p>    
+          <p>E-mail:<input type="email" name="tMail" id="cMail" size="20" maxlength="40" ></p>
+          <fieldset id="sexo"><legend>Sexo:</legend> 
+                 <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino </label><br>
+                 <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></fieldset>
+          <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></input></p> 
+          </fieldset>                       
+          
+          <fieldset id="Endereço"><legend>Endereço do Usuário:</legend>
+          <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="40" placeholder="Rua, Avda..."></p>
+          <p>Número:<input type="number" name="tNum" id="cNum" min="0" max="999999"></p> 
+          <p><label for="cEst">Estado:</label>    
+          <select name="tEst" id="cEst">
+          <option selected>São Paulo</option>
+          <option>Mato Grosso</option>
+          <option>Mato Grosso do Sul</option>
+          <option>Parana</option>
+
+          </select></p>
+          <p><label for="cCid">Cidade:</label>
+          <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades"></p>
+          <datalist id="cidades">
+             <option value="Cuiabá"></option>
+             <option value="Várzea Grande"></option>
+             <option value="Rondonópolis"></option>
+             <option value="Sinop"></option>
+                          
+          </datalist>
+          </fieldset>
+          <input type="submit" value="Enviar"/ >
+          </form>
+          </header> 
+
+</div>
+</body>
+</htm> 
